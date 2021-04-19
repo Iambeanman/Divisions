@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
+    public Raft raft;
+
     public Hook hook;
     public Rope rope;
     public float throwSmooth = 0.5f;
@@ -112,4 +114,6 @@ public class Player : MonoBehaviour
 
         trajectoryRender.SetPositions(points);
     }
+
+   
 }

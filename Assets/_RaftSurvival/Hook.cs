@@ -60,6 +60,7 @@ public class Hook : MonoBehaviour
             case EHookState.Idle:
                 if(grabedItem != null)
                 {
+                    Player.get.raft.PickUpItem(grabedItem.score);
                     Destroy(grabedItem.gameObject);
                     grabedItem = null;
                 }
